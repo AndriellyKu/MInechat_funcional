@@ -1,0 +1,155 @@
+/* Container geral */
+body {
+    margin: 0;
+    background: url('../../assets/calma.webp') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .new-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card principal */
+  .new-chat-wrapper {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .new-chat-card {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Cabeçalho */
+  .new-chat-header {
+    padding: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .new-chat-info h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .new-chat-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #e0e0e0;
+  }
+  
+  .new-menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .new-action-menu {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8); /* Preto transparente */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .new-action-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .new-action-menu li {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .new-action-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Branco transparente no hover */
+  }
+  
+  /* Corpo do chat */
+  .new-chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #e8f5e9;
+  }
+  
+  .new-message {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .new-message-sent {
+    justify-content: flex-end;
+  }
+  
+  .new-message-received {
+    justify-content: flex-start;
+  }
+  
+  .new-message-content {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #81c784;
+    color: #fff;
+    position: relative;
+  }
+  
+  .new-message-sent .new-message-content {
+    background-color: #64b5f6;
+  }
+  
+  .new-message-time {
+    display: block;
+    font-size: 0.8em;
+    color: #e0e0e0;
+    margin-top: 5px;
+  }
+  
+  /* Rodapé */
+  .new-chat-footer {
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .new-message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .new-send-button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-send-button:hover {
+    background-color: #45a049;
+  }
